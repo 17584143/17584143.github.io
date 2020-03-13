@@ -1,13 +1,24 @@
 <html>
 
 <head>
-    <title></title>
+    <script src="./js/jssor.slider.min.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var options = { $AutoPlay: 1 };
+            var jssor1_slider = new $JssorSlider$("jssor_1", options);
+        });
+    </script>
+    <div id="jssor_1" style="position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+        <div data-u="slides" style="position:absolute;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div><img data-u="image" src="/img/a.jpg" /></div>
+            <div><img data-u="image" src="/img/a.jpg" /></div>
+        </div>
+    </div>
 </head>
 
 <body>
-    <h1>
-        i am 吴彦祖
-    </h1>
+    <h1>在现场，我是拍照那个</h1>
 </body>
 
 </html>
