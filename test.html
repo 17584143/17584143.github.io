@@ -3,17 +3,41 @@
 <head>
     <script src="./js/stat.js"></script>
     <script src="./js/underscore.js"></script>
-    <script>
-        var reduce = 3;
-        var data = [
-            { name: '计算机安装与维护', credit: 2 }
-            , { name: '静态网页制作', credit: 2 }
-            , { name: '计算机编程基础', credit: 4 }
-            , { name: '大啊学英语', credit: 2 }
-            , { name: '软件技术导论', credit: 2 }
-        ];
-        console.log(my.max(data));
-        console.log(_.max(data,function(it){return it.credit}));
+    <script type="text/javascript">
+        // var reduce = 3;
+        // var data = [
+        //     { name: '计算机安装与维护', credit: 2 }
+        //     , { name: '静态网页制作', credit: 2 }
+        //     , { name: '计算机编程基础', credit: 4 }
+        //     , { name: '大啊学英语', credit: 2 }
+        //     , { name: '软件技术导论', credit: 2 }
+        // ];
+        // console.log(my.max(data));
+        // console.log(_.max(data, function (it) { return it.credit }));
+
+        // var a = 10;
+        // function fn() {
+        //     var b = 20;
+        //     function bar() {
+        //         console.log(a + b);
+        //     }
+        //     return bar;
+        // }
+        // var b = 200;
+        // var x = fn();
+        // x();
+
+        function fn(){
+    var max=10;
+    return function bar(x){
+        if(x>max){
+            console.log(x);
+        }
+    };
+}
+var f1=fn()；
+f1(15);
+console.log(max)；
     </script>
 </head>
 
