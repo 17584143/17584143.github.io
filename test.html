@@ -27,17 +27,37 @@
         // var x = fn();
         // x();
 
-        function fn(){
-    var max=10;
-    return function bar(x){
-        if(x>max){
-            console.log(x);
+        //         function fn(){
+        //     var max=10;
+        //     return function bar(x){
+        //         if(x>max){
+        //             console.log(x);
+        //         }
+        //     };
+        // }
+        // var f1=fn(),max=100;
+        // f1(15);
+
+
+        // var value=11;
+
+        var value = 11;
+        var initvalue = 22;
+
+        function addition() {
+            var value = initvalue;
+
+            return function add(x) {
+                value = value + x;
+                this.initvalue = value;
+            };
         }
-    };
-}
-var f1=fn()；
-f1(15);
-console.log(max)；
+
+        var func = addition();
+        func(33);
+        func(44);
+        console.log(initvalue);
+
     </script>
 </head>
 
