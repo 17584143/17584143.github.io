@@ -1,29 +1,30 @@
 <html>
-    <body>
-       <ul>
 
-       </ul>
-        <script src="jquery-3.4.1.js"></script>
-        <script src="underscore.js"></script>
+<body>
+    <ul>
+
+    </ul>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="underscore.js"></script>
 
     <script>
 
 
-$(function(){
+        $(function () {
 
 
-    $.get("./data.json", function(data){
-        _.each(data, function(item){
-            $("ul").append("<li>"+item.name+"(学分："+item.credit+")"+"</li>");
-    });
-  
+            $.get("./data.json", function (data) {
+                _.each(data, function (item) {
+                    $("ul").append("<li>" + item.name + "(学分：" + item.credit + ")" + "</li>");
+                });
 
-          
-});
 
-    
 
-})
+            });
+
+
+
+        })
 
 
 
@@ -31,5 +32,6 @@ $(function(){
     </script>
 
 
-    </body>
+</body>
+
 </html>
